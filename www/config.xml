@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "ie.pfai.app"
+        version   = "0.0.4"
+        versionCode = "1" >
+
+    <name>PFA Ireland Beta 4</name>
+
+    <description>
+        PFAI application
+    </description>
+
+    <author href="http://pfai.ie" email="strtbyrne@gmail.com">
+        Stuart Byrne
+    </author>
+    
+    <gap:platform name="winphone" />
+    
+	<preference name="permissions"                value="none"/>
+
+    <preference name="phonegap-version"           value="2.9.0" />          <!-- all: current version of PhoneGap -->
+    <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
+    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
+   
+ 
+    
+    <icon src="res/icon/winphone/icon.png" gap:platform="winphone" />
+    <icon src="res/icon/winphone/titleicon.png" gap:platform="winphone" gap:role="background" />
+
+    
+    <gap:splash src="res/screen/winphone/splash.jpg" gap:platform="winphone" />
+    
+    <!--Access all domains-->
+    
+    <access origin="*" subdomains="true" />
+    
+	 <plugins>
+        <plugin name="Device" value="CDVDevice" />
+        <plugin name="Logger" value="CDVLogger" />
+        <plugin name="Compass" value="CDVLocation" />
+        <plugin name="Accelerometer" value="CDVAccelerometer" />
+        <plugin name="Camera" value="CDVCamera" />
+        <plugin name="NetworkStatus" value="CDVConnection" />
+        <plugin name="Contacts" value="CDVContacts" />
+        <plugin name="Echo" value="CDVEcho" />
+        <plugin name="File" value="CDVFile" />
+        <plugin name="FileTransfer" value="CDVFileTransfer" />
+        <plugin name="Geolocation" value="CDVLocation" />
+        <plugin name="Notification" value="CDVNotification" />
+        <plugin name="Media" value="CDVSound" />
+        <plugin name="Capture" value="CDVCapture" />
+        <plugin name="SplashScreen" value="CDVSplashScreen" />
+        <plugin name="Battery" value="CDVBattery" />
+        <plugin name="Globalization" value="CDVGlobalization" />
+        <plugin name="InAppBrowser" value="CDVInAppBrowser" />
+    </plugins>
+</widget>
